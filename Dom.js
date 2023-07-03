@@ -27,21 +27,7 @@
 // items[1].textContent = 'HELLO';
 // items[1].style.fontWeight = 'bold';
 // items[1].style.backgroundColor = 'red'
-// // items.style.backgroundColor = "#f4f4f4"
-// for (let i = 0; i < items.length; i++) {
-//     items[i].style.backgroundColor = '#f4f4f4'
-// }
-// // selection by tag name//
-// const tagname1 = document.getElementsByTagName('li')
-// console.log(tagname1[2].innerText = 'mast')
-// for (let i = 0; i < tagname1.length; i++) {
-//     tagname1[i].style.backgroundColor = '#ccc';
-
-// const newlii = document.getElementsByClassName('newli')
-// console.log(newlii.style.color = 'red')
-const li = document.getElementsByTagName('li')
-console.log(li)
-li[4].style.color = 'red'
+// // items.style.backgroundColor = "#f4f4f4" = 'red'
 
 
 
@@ -51,9 +37,32 @@ li[4].style.color = 'red'
 // header1.style.borderbottom = '#ccc'
 //
 
-// const listItems = document.querySelector('list-group-item')
-// listItems.computedStyleMap.color = 'red'
+// const listItems = document.querySelector('.list-group-item:nth-child(2)')
+// listItems.style.backgroundColor = 'green'
+// const listItem = document.querySelector('.list-group-item:nth-child(3)')
+// listItem.style.display = "none"
+
+
+// quearyselectorall
+// const items = document.querySelectorAll(".list-group-item")
+// console.log(items)
+// items[1].style.color = "#00FF00"
+// const itemall = document.querySelectorAll(".list-group-item:nth-child(odd)")
+// for (let i = 0; i < items.length; i++) {
+//     itemall[i].style.backgroundColor = 'green'
+
+
+//     //aa
+// }
 
 
 
 
+// const li = document.getElementsByTagName('li')
+// li[4].style.color = 'red'
+
+
+
+// Traversing DOM
+const listItems = document.querySelector('#items')
+console.log(listItems)
