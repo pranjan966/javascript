@@ -37,10 +37,27 @@
 // header1.style.borderbottom = '#ccc'
 //
 
-// const listItems = document.querySelector('list-group-item')
-// listItems.computedStyleMap.color = 'red'
+// const listItems = document.querySelector('.list-group-item:nth-child(2)')
+// listItems.style.backgroundColor = 'green'
+// const listItem = document.querySelector('.list-group-item:nth-child(3)')
+// listItem.style.display = "none"
+
+
+// quearyselectorall
+const items = document.querySelectorAll(".list-group-item")
+console.log(items)
+items[1].style.color = "#00FF00"
+const itemall = document.querySelectorAll(".list-group-item:nth-child(odd)")
+for (let i = 0; i < items.length; i++) {
+    itemall[i].style.backgroundColor = 'green'
+
+
+    //aa
+}
 
 
 
-const li = document.getElementsByTagName('li')
-li[4].style.color = 'red'
+
+// const li = document.getElementsByTagName('li')
+// li[4].style.color = 'red'
+///abcd
