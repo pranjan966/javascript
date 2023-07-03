@@ -27,25 +27,18 @@
 // items[1].textContent = 'HELLO';
 // items[1].style.fontWeight = 'bold';
 // items[1].style.backgroundColor = 'red'
-// // items.style.backgroundColor = "#f4f4f4"
-// for (let i = 0; i < items.length; i++) {
-//     items[i].style.backgroundColor = '#f4f4f4'
-// }
-// // selection by tag name//
-const tagname1 = document.getElementsByTagName('li')
-// console.log(tagname1[2].innerText = 'mast')
-// for (let i = 0; i < tagname1.length; i++) {
-//     tagname1[i].style.backgroundColor = '#ccc';
+// // items.style.backgroundColor = "#f4f4f4" = 'red'
+
 
 
 // }
 // queary selector//
 // const header1 = document.querySelector('#main-header');
 // header1.style.borderbottom = '#ccc'
-//  
+//
 
-const listItems = document.querySelector('list-group-item')
-listItems.computedStyleMap.color = 'red'
+// const listItems = document.querySelector('list-group-item')
+// listItems.computedStyleMap.color = 'red'
 
 
 
