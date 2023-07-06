@@ -4,8 +4,10 @@ document.getElementById("my-form").addEventListener("submit", function (event) {
     var email = document.getElementById("exampleInputEmail1").value;
     var password = document.getElementById("exampleInputPassword1").value;
     // console.log("Name: " + name);
-    console.log("Email: " + email);
-    console.log("Password: " + password);
+    // console.log("Email: " + email);
+    // console.log("Password: " + password);
+    localStorage.setItem("user_email", email)
+
 
     document.getElementById('my-form').style.background = "#ccc";
     document.getElementById('exampleInputEmail1').value = "enter user name";
@@ -32,7 +34,7 @@ document.getElementById("my-form").addEventListener("submit", function (event) {
 
 // btn.style.background = 'red'
 // document.querySelector("my-form").style.background = '#ccc'
-document.getElementsByClassName("form-label").addEventListener("mouseover", (e) => {
+// document.getElementsByClassName("form-label").addEventListener("mouseover", (e) => {
 
-    document.getElementsByClassName.style.background = "red";
-})
+//     document.getElementsByClassName.style.background = "red";
+// })
