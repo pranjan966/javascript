@@ -6,11 +6,15 @@ document.getElementById("my-form").addEventListener("submit", function (event) {
     // console.log("Name: " + name);
     // console.log("Email: " + email);
     // console.log("Password: " + password);
-    localStorage.setItem("user_email", email)
 
+    // localStorage.setItem("user_email", email)
+    let email_serialized = JSON.stringify(email)
+    localStorage.setItem('email', email_serialized)
+    let emial_deserialized = JSON.parse(localStorage.getItem("email"));
+    console.log(emial_deserialized)
 
-    document.getElementById('my-form').style.background = "#ccc";
-    document.getElementById('exampleInputEmail1').value = "enter user name";
+    // document.getElementById('my-form').style.background = "#ccc";
+    // document.getElementById('exampleInputEmail1').value = "enter user name";
 
 })
 // You can perform further actions with the form data here
